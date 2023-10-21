@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1>Subject Scheduling App</h1>
+	<hr>
+			<div class="form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Subject</label><label class="validation-error hide" id="subjectValidationError">This field is required.</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                    <div>
+                        <label>Day</label>
+                        <input type="text" name="day" id="day">
+                    </div>
+                    <div>
+                        <label>Time</label>
+                        <input type="text" name="time" id="time">
+                    </div>
+                    <div>
+                        <label>Room</label>
+                        <input type="text" name="room" id="room">
+                    </div>
+                    <div>
+                        <label>Instructor</label>
+                        <input type="text" name="instructor" id="instructor">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+
+            
+                </form>
+		</div>
+		<br/>
+		<div class = "table">
+                <table class="list" id="nameList">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Room</th>
+                            <th>Instructor</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
